@@ -7,18 +7,16 @@
 	align-content: center;
 }
 
-
 .calculator-grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns:repeat(4, 1fr);
+	grid-template-rows:repeat(6, 1fr);
 	height: 400px;
 	width: 400px;
 	grid-gap: 1px;
 	border: 10px solid black;
 	padding: 5px;
 	margin: auto;
-	
 }
 
 .btn {
@@ -29,7 +27,6 @@
 .operator {
 	color:red;
 }
-
 
 #equals {
 	grid-column: 4/4;
@@ -47,7 +44,6 @@
 	padding-right: 10px;
 	
 }
-
 
 @font-face {
 	font-family:calculator;

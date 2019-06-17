@@ -14,7 +14,7 @@ const calculate = (code, a, b) => {
 			return divide(a, b);
 	}
 };
-const container = document.querySelector('.container');
+
 const resultBox = document.querySelector('#result');
 const nums = document.querySelectorAll(".num");
 const operators = document.querySelectorAll(".operator");
@@ -24,7 +24,6 @@ let operatorNum = 0;
 let displayNum = '0';
 let firstOperand = '';
 let secondOperand = '';
-let result = '';
 
 display(displayNum);
 
