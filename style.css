@@ -1,0 +1,55 @@
+* {
+	font-family: calculator;
+}
+
+.container {
+	height:100%;
+	align-content: center;
+}
+
+
+.calculator-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	height: 400px;
+	width: 400px;
+	grid-gap: 1px;
+	border: 10px solid black;
+	padding: 5px;
+	margin: auto;
+	
+}
+
+.btn {
+	font-size: 25px;
+	font-weight: 800;
+}
+
+.operator {
+	color:red;
+}
+
+
+#equals {
+	grid-column: 4/4;
+	grid-row: 3/7;
+	font-size: 40px;
+}
+
+#result {
+	grid-column: 1/5;
+	border: 1px solid black;
+	margin-bottom: 3px;
+	margin-top:0;
+	font-size: 60px;
+	text-align: right;
+	padding-right: 10px;
+	
+}
+
+
+@font-face {
+	font-family:calculator;
+	src: url("Calculator.ttf") format('woff');
+}
