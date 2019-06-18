@@ -2,21 +2,27 @@
 	font-family: calculator;
 }
 
-.container {
-	height:100%;
-	align-content: center;
+body {
+	background-color: rgb(142, 140, 146);
+}
+
+#header {
+	text-align: center;
+	font-size: 70px;
 }
 
 .calculator-grid {
 	display: grid;
-	grid-template-columns:repeat(4, 1fr);
-	grid-template-rows:repeat(6, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(6, 1fr);
 	height: 400px;
 	width: 400px;
 	grid-gap: 1px;
 	border: 10px solid black;
 	padding: 5px;
 	margin: auto;
+	background: white;
+	margin-top: 50px;
 }
 
 .btn {
@@ -25,7 +31,7 @@
 }
 
 .operator {
-	color:red;
+	color: red;
 }
 
 #equals {
@@ -38,14 +44,14 @@
 	grid-column: 1/5;
 	border: 1px solid black;
 	margin-bottom: 3px;
-	margin-top:0;
-	font-size: 60px;
+	margin-top: 0;
+	font-size: 70px;
 	text-align: right;
 	padding-right: 10px;
-	
+	background: white;
 }
 
 @font-face {
-	font-family:calculator;
+	font-family: calculator;
 	src: url("Calculator.ttf") format('woff');
 }
